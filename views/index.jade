@@ -7,11 +7,10 @@ html
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Italiana&subset=latin')
     meta(name='viewport', content='user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0')
     meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    script.
-      window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
-      window.analytics.load("9u0xff0b3k");
-      window.analytics.page();
-    script(src='stats.js')
+    style.
+      img[src='http://icon.cnzz.com/img/pic1.gif'] {
+        display: none;
+      }
   body
     section#top
       #menu
@@ -65,3 +64,5 @@ html
           li: a(href='https://github.com/koajs/koa/blob/master/docs/guide.md') 文档
           li: a(href='https://github.com/koajs/koa/blob/master/docs/faq.md') FAQ
           <!-- li: <strong>#koajs</strong> on freenode -->
+    script.
+      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_5911607'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/stat.php%3Fid%3D5911607%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
